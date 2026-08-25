@@ -9,3 +9,9 @@ function courseLine(course) {
   const { code, title, credits } = course;
   return `${code}: ${title} (${credits} credits)`;
 }
+
+function isFull(course) {
+  const { enrolled, cap } = course;
+  return enrolled === cap;
+}
+
