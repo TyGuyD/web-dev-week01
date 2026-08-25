@@ -37,4 +37,13 @@ function totalCredits(coursesArray) {
   return coursesArray.reduce((sum, { credits }) => sum + credits, 0);
 }
 
+console.log(courseLine(courses[1]));
+console.log(isFull(courses[1]));
+console.log(openCourses(courses));
+console.log(courseTitles(courses));
+console.log(openCourseLines(courses));
+console.log(findCourse(courses, 'WEB250'));
+console.log(addCourse(courses, { code: "WEB300", title: "Advanced Web Topics", credits: 4, enrolled: 0, cap: 30 }));
+console.log(totalCredits(courses));
+
 
