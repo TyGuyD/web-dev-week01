@@ -4,3 +4,8 @@ const courses = [
   { code: "DAT200", title: "SQL Fundamentals", credits: 3, enrolled: 12, cap: 25 },
   { code: "PRG115", title: "Intro to C#", credits: 4, enrolled: 28, cap: 30 },
 ];
+
+function courseLine(course) {
+  const { code, title, credits } = course;
+  return `${code}: ${title} (${credits} credits)`;
+}
