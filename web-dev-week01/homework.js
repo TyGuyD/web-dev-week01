@@ -29,4 +29,8 @@ function findCourse(coursesArray, code) {
   return coursesArray.find(course => course.code === code);
 }
 
+function addCourse(coursesArray, newCourse) {
+  return [...coursesArray, newCourse];
+}
+
 
