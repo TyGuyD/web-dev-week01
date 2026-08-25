@@ -23,4 +23,6 @@ function courseTitles(coursesArray) {
   return coursesArray.map(({ title }) => title);
 }
 
+const openCourseLines = coursesArray => openCourses(coursesArray).map(courseLine);
+
 
