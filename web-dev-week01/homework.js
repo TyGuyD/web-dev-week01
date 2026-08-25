@@ -15,3 +15,8 @@ function isFull(course) {
   return enrolled === cap;
 }
 
+function openCourses(coursesArray) {
+  return coursesArray.filter(course => !isFull(course));
+}
+
+
