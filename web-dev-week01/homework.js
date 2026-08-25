@@ -19,4 +19,8 @@ function openCourses(coursesArray) {
   return coursesArray.filter(course => !isFull(course));
 }
 
+function courseTitles(coursesArray) {
+  return coursesArray.map(({ title }) => title);
+}
+
 
