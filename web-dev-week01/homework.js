@@ -33,4 +33,8 @@ function addCourse(coursesArray, newCourse) {
   return [...coursesArray, newCourse];
 }
 
+function totalCredits(coursesArray) {
+  return coursesArray.reduce((sum, { credits }) => sum + credits, 0);
+}
+
 
