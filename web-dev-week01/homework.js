@@ -25,4 +25,8 @@ function courseTitles(coursesArray) {
 
 const openCourseLines = coursesArray => openCourses(coursesArray).map(courseLine);
 
+function findCourse(coursesArray, code) {
+  return coursesArray.find(course => course.code === code);
+}
+
 
